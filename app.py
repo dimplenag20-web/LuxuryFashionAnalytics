@@ -10,7 +10,7 @@ st.set_page_config(
 
 @st.cache_data
 def load_data():
-    return pd.read_csv("data/Luxury_Products_Apparel_Data.csv")
+    return pd.read_csv("Data/Luxury_Products_Apparel_Data.csv")
 
 df = load_data()
 
