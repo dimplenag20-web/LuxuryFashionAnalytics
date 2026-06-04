@@ -1,6 +1,7 @@
 import streamlit as st
 import pandas as pd
 import plotly.express as px
+import os
 
 st.set_page_config(
     page_title="Luxury Fashion Analytics",
@@ -10,6 +11,16 @@ st.set_page_config(
 
 @st.cache_data
 def load_data():
+
+    st.write("Current Directory:", os.getcwd())
+
+    st.write("Root Files:", os.listdir("."))
+
+    if os.path.exists("data"):
+        st.write("Data Folder Files:", os.listdir("data"))
+    else:
+        st.error("data folder not found")
+
     return pd.read_csv("data/Luxury_Products_Apparel_Data.csv")
 
 df = load_data()
