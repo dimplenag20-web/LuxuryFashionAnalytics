@@ -1,0 +1,69 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual Environment
+venv/
+env/
+ENV/
+.venv/
+
+# Streamlit
+.streamlit/secrets.toml
+
+# Jupyter Notebook
+.ipynb_checkpoints/
+
+# VS Code
+.vscode/
+
+# PyCharm
+.idea/
+
+# macOS
+.DS_Store
+
+# Windows
+Thumbs.db
+desktop.ini
+
+# Logs
+*.log
+
+# Environment Variables
+.env
+
+# Build Files
+build/
+dist/
+*.egg-info/
+
+# Python Cache
+.pytest_cache/
+.mypy_cache/
+
+# Data Files (optional)
+# Uncomment if dataset is very large
+# data/*.csv
+# data/*.xlsx
+
+# Generated Reports
+reports/
+exports/
+output/
+
+# Temporary Files
+temp/
+tmp/
+
+# Streamlit Cache
+.cache/
+
+# Coverage Reports
+htmlcov/
+.coverage
+
+# SQLite Databases
+*.db
+*.sqlite3
